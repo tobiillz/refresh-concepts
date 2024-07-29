@@ -6,13 +6,39 @@ import java.util.Scanner;
 
 class Calculator{
 
+//  Method Overloading
     public int sum(int x,int y){
 
         int result = x + y;
         System.out.println("Sum of numbers");
         return result;
     }
+
+    public int sum(int x, int y, int z){
+        return x + y + z;
+    }
+    public int sum(int x, int y, int z, int a){
+        return x + y + z + a;
+    }
 }
+
+
+/*
+class Computer{
+
+    public void moveMouse(){
+        System.out.println("Mouse is moving");
+    }
+
+    public String playMusic(int cost){
+        if (cost >=2) {
+            return "Music is playing";}
+        else{
+            return "Not sufficient";
+        }
+    }
+
+}*/
 
 public class First {
 
@@ -209,19 +235,21 @@ public class First {
             }
         }*/
 
-
+/*
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Please enter the first number");
         int m = scanner.nextInt();
         System.out.println("Please enter the second number");
-        int n = scanner.nextInt();
+        int n = scanner.nextInt();*/
 
-//        int sum = m + n;
         Calculator calculator = new Calculator();
-        int sum = calculator.sum(m,n);
-//        System.out.println("The sum of "+ x + " and "+ y + " is "+ sum);
+        int sum = calculator.sum(1,2, 7, 5);
         System.out.println("The sum is " + sum);
+
+/*    Computer computer = new Computer();
+        computer.moveMouse();
+        System.out.println(computer.playMusic(1)); */
 
     }
 
