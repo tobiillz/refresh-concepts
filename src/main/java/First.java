@@ -3,8 +3,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 
+class Person{
+    String name;
+    String email = new String();
+    int id;
+    int age;
 
-class Calculator{
+}
+/*class Calculator{
 
 //  Method Overloading
     public int sum(int x,int y){
@@ -20,8 +26,7 @@ class Calculator{
     public int sum(int x, int y, int z, int a){
         return x + y + z + a;
     }
-}
-
+}*/
 
 /*
 class Computer{
@@ -42,13 +47,39 @@ class Computer{
 
 public class First {
 
-
     public static void main(String[] args) {
 
-/*        int[] array= {1,2,3,4,5,6};
+        Person person = new Person();
 
-        int target = 5;
-        System.out.println(array[0]);*/
+        person.name = "Victor";
+        person.age = 25;
+        person.id = 1;
+        person.email = "test@yahoo.com";
+
+        Person person1 = new Person();
+
+        person1.name = "Trustcott";
+        person1.age = 24;
+        person1.id = 2;
+        person1.email = "test2@ay.com";
+
+        System.out.println(person1.name);
+        System.out.println(person.name);
+
+        Person persons[] = new Person[2];
+        persons[0]=person;
+        persons[1]=person1;
+
+//      Enhanced for loop
+        for(Person n : persons ){
+            System.out.println(n.name + ':' + n.email + ':' + n.age);
+        }
+
+/*     int[] array= {1,2,3,4,5,6};
+       //Enhanced for-loop
+       for(int n: array){
+           System.out.println(n);
+       }*/
 
 
 
@@ -243,9 +274,9 @@ public class First {
         System.out.println("Please enter the second number");
         int n = scanner.nextInt();*/
 
-        Calculator calculator = new Calculator();
+        /*Calculator calculator = new Calculator();
         int sum = calculator.sum(1,2, 7, 5);
-        System.out.println("The sum is " + sum);
+        System.out.println("The sum is " + sum);*/
 
 /*    Computer computer = new Computer();
         computer.moveMouse();
