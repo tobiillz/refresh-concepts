@@ -282,6 +282,22 @@ public class First {
         computer.moveMouse();
         System.out.println(computer.playMusic(1)); */
 
+
+
+//        MUTABLE AND IMMUTABLE STRINGS - String buffer and builder
+
+        String objName = "Victor"; //Immutable;
+        String objName1 = new String("Stephen"); //Immutable
+
+//        Thread Safe
+        StringBuffer sb = new StringBuffer("Adeniyi");
+        sb.append(" Jones");
+//        sb.insert(0,"test ");
+//        sb.replace(0,4,"Type");
+        System.out.println(sb);
+
+//        Not Thread safe
+        StringBuilder stringBuilder = new StringBuilder();
     }
 
 
