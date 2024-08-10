@@ -4,10 +4,14 @@ import java.util.List;
 import java.util.Scanner;
 
 class Person{
-    String name;
+    static String name;
     String email = new String();
     int id;
     int age;
+
+    public void ShowPerson(){
+        System.out.println(name + ":" + email);
+    }
 
 }
 /*class Calculator{
@@ -65,6 +69,7 @@ public class First {
 
         System.out.println(person1.name);
         System.out.println(person.name);
+        System.out.println("----------->");
 
         Person persons[] = new Person[2];
         persons[0]=person;
@@ -80,6 +85,9 @@ public class First {
        for(int n: array){
            System.out.println(n);
        }*/
+
+        person.ShowPerson();
+        person1.ShowPerson();
 
 
 

@@ -13,7 +13,7 @@ public class Algorithms {
 
 //    1. --------Brute Force Method------------
 
-/*        public int[] twoSum(int[] nums,int target ){
+        public int[] twoSum(int[] nums,int target ){
 
             for(int i = 0; i < nums.length; i++){
                 for (int j = i +1; j< nums.length; j++){
@@ -22,8 +22,7 @@ public class Algorithms {
                 }
             }
             return null;
-        }*/
-
+        }
 
 //        --------------Hash Map----------------------
 
@@ -32,6 +31,9 @@ public class Algorithms {
             HashMap<Integer,Integer> map = new HashMap<>();
         }*/
 
+    public static void main(String[] args) {
+        System.out.println("Tested");
+    }
 
 
 
