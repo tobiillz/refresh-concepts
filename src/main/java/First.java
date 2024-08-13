@@ -306,6 +306,36 @@ public class First {
 
 //        Not Thread safe
         StringBuilder stringBuilder = new StringBuilder();
+
+        Scanner sc = new Scanner(System.in);
+
+
+//        BMI CALCULATOR
+
+        Scanner sc1 = new Scanner(System.in);
+        System.out.print("Please enter you weight in kg: ");
+        double weight = sc1.nextDouble();
+
+        Scanner sc2 = new Scanner(System.in);
+        System.out.print("Please enter you height in meters: ");
+        double height = sc2.nextDouble();
+
+        double bmi = weight / Math.pow(height,2);
+
+        if (bmi < 18){
+            System.out.println("You are underweight with a "+ bmi + " bmi, please eat some more.");
+        } else if (bmi >= 18 && bmi <25) {
+
+            System.out.println("You are very healthy with a "+ bmi + " bmi, Keep it up.");
+        }
+        else if (bmi >= 25 && bmi < 30){
+            System.out.println("You are overweight with a "+ bmi + " bmi, please eat healthy veges and work out more.");
+        }
+        else {
+            System.out.println("You health is in critical condition.");
+
+        }
+
     }
 
 
