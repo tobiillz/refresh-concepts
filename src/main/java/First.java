@@ -311,7 +311,7 @@ public class First {
 
 
 //        BMI CALCULATOR
-
+/*
         Scanner sc1 = new Scanner(System.in);
         System.out.print("Please enter you weight in kg: ");
         double weight = sc1.nextDouble();
@@ -334,9 +334,39 @@ public class First {
         else {
             System.out.println("You health is in critical condition.");
 
-        }
+        }*/
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter your name: ");
+        String username = scanner.nextLine();
+
+
+
+        Scanner scanner1 = new Scanner(System.in);
+        System.out.println("Please enter your password: ");
+
+        String password = scanner.nextLine();
+
+        if (username.equals("admin")){
+//            System.out.println("Username: "+ username);
+            if (password.equals("P@55w0rd")){
+                System.out.println("Login successful!!!");
+            }else {
+                System.out.println("wrong password entered");
+            }
+        } else if (username.equals("guest")) {
+//            System.out.println("Username: "+ username);
+            if (password.equals("P@55w0rd")){
+                System.out.println("Login successful!!!");
+            }else {
+                System.out.println("wrong password");
+            }
+        }else
+            System.out.println(" Wrong details entered");
 
     }
+
 
 
 }
