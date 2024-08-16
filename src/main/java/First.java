@@ -4,10 +4,34 @@ import java.util.List;
 import java.util.Scanner;
 
 class Person{
-    static String name;
+    String name;
     String email = new String();
     int id;
     int age;
+
+    /* ENCAPSULATION*/
+    private String description;
+    private Double salary;
+
+
+    public String getDescription(){
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(Double salary) {
+        this.salary = salary;
+    }
+    /**/
+
+
 
     public void ShowPerson(){
         System.out.println(name + ":" + email);
@@ -53,27 +77,31 @@ public class First {
 
     public static void main(String[] args) {
 
-        Person person = new Person();
-
-        person.name = "Victor";
-        person.age = 25;
-        person.id = 1;
-        person.email = "test@yahoo.com";
-
         Person person1 = new Person();
 
-        person1.name = "Trustcott";
-        person1.age = 24;
-        person1.id = 2;
-        person1.email = "test2@ay.com";
+
+        person1.name = "Victor";
+        person1.age = 25;
+        person1.id = 1;
+        person1.email = "test@yahoo.com";
+        System.out.println(person1.getDescription());
+
+
+        Person person2 = new Person();
+
+        person2.name = "Trustcott";
+        person2.age = 24;
+        person2.id = 2;
+        person2.email = "test2@ay.com";
+        System.out.println(person2.getDescription());
 
         System.out.println(person1.name);
-        System.out.println(person.name);
+        System.out.println(person2.name);
         System.out.println("----------->");
 
         Person persons[] = new Person[2];
-        persons[0]=person;
-        persons[1]=person1;
+        persons[0]=person1;
+        persons[1]=person2;
 
 //      Enhanced for loop
         for(Person n : persons ){
@@ -86,8 +114,8 @@ public class First {
            System.out.println(n);
        }*/
 
-        person.ShowPerson();
         person1.ShowPerson();
+        person2.ShowPerson();
 
 
 
@@ -282,17 +310,18 @@ public class First {
         System.out.println("Please enter the second number");
         int n = scanner.nextInt();*/
 
-        /*Calculator calculator = new Calculator();
+        /*
+        Calculator calculator = new Calculator();
         int sum = calculator.sum(1,2, 7, 5);
         System.out.println("The sum is " + sum);*/
 
-/*    Computer computer = new Computer();
+/*      Computer computer = new Computer();
         computer.moveMouse();
         System.out.println(computer.playMusic(1)); */
 
 
 
-//        MUTABLE AND IMMUTABLE STRINGS - String buffer and builder
+//      MUTABLE AND IMMUTABLE STRINGS - String buffer and builder
 
         String objName = "Victor"; //Immutable;
         String objName1 = new String("Stephen"); //Immutable
