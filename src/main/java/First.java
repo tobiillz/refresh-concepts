@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 class Person{
     String name;
-    String email = new String();
+    static String email = new String();
     int id;
     int age;
 
@@ -116,6 +116,7 @@ public class First {
 
         person1.ShowPerson();
         person2.ShowPerson();
+        System.out.println("Newly inputted data: "+ Person.email);
 
 
 
